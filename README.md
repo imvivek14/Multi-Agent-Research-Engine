@@ -1,53 +1,60 @@
 # 🤖 Multi-Agent Research Engine
 
-An AI-powered research platform built with **CrewAI**, **OpenRouter**, **Tavily**, and **Streamlit** that performs web research, fact-checking, report generation, and document export through a multi-agent workflow.
+An AI-powered research platform built with CrewAI, OpenRouter, Tavily, and Streamlit that performs automated web research, fact-checking, report generation, and PDF export through a multi-agent workflow.
 
-## 🚀 Features
+## 🚀 Live Demo
 
-* 🔍 Real-time web research using Tavily Search
-* 🤖 Multi-agent architecture with CrewAI
-* ✅ Fact-checking and validation workflow
-* 📊 Professional report generation
-* 📄 PDF export
-* 📝 Markdown export
-* 🌐 Streamlit web interface
-* 💾 Automatic report storage
+**Try the application:**
+https://multi-agent-research-engine-b4bygfwpfkwmvqtpgjf89n.streamlit.app/
+
+## 📂 GitHub Repository
+
+https://github.com/imvivek14/Multi-Agent-Research-Engine
 
 ---
 
-## 🏗️ Architecture
+## ✨ Features
+
+* Multi-Agent AI Workflow using CrewAI
+* Real-time Web Research with Tavily Search
+* Automated Fact Checking
+* Professional Report Generation
+* PDF Export
+* Markdown Export
+* Interactive Streamlit Interface
+* OpenRouter LLM Integration
+* Downloadable Reports
+
+---
+
+## 🏗️ System Architecture
 
 ```text
-User Topic
-      ↓
+User Query
+     │
+     ▼
 Tavily Search
-      ↓
+     │
+     ▼
 Research Agent
-      ↓
+     │
+     ▼
 Fact Checker Agent
-      ↓
+     │
+     ▼
 Analyst Agent
-      ↓
-Report Generation
-      ↓
-PDF / Markdown Export
+     │
+     ▼
+Final Report
+     ├── Markdown Export
+     └── PDF Export
 ```
 
 ---
 
-## 🧠 Agents
+## 📸 Application Dashboard
 
-### Research Agent
-
-Responsible for gathering and analyzing information from web search results.
-
-### Fact Checker Agent
-
-Validates findings, identifies unsupported claims, and improves reliability.
-
-### Analyst Agent
-
-Transforms verified research into a structured professional report.
+![Dashboard](screenshots/Dashboard.png)
 
 ---
 
@@ -63,55 +70,42 @@ Transforms verified research into a structured professional report.
 
 ---
 
-## 📸 Dashboard
+## 🧠 Agents
 
-![Dashboard](screenshots/Dashboard.png)
+### Research Agent
+
+Collects and analyzes information from web sources.
+
+### Fact Checker Agent
+
+Verifies findings and improves information reliability.
+
+### Analyst Agent
+
+Transforms validated research into a professional report.
 
 ---
 
 ## ⚙️ Installation
 
-### Clone the repository
-
 ```bash
 git clone https://github.com/imvivek14/Multi-Agent-Research-Engine.git
 cd Multi-Agent-Research-Engine
-```
 
-### Create a virtual environment
-
-```bash
 python -m venv venv
-```
-
-### Activate the environment
-
-Windows:
-
-```bash
 venv\Scripts\activate
-```
 
-### Install dependencies
-
-```bash
 pip install -r requirements.txt
 ```
 
----
-
-## 🔑 Environment Variables
-
-Create a `.env` file in the project root:
+Create a `.env` file:
 
 ```env
-OPENROUTER_API_KEY=your_openrouter_api_key
-TAVILY_API_KEY=your_tavily_api_key
+OPENROUTER_API_KEY=your_key
+TAVILY_API_KEY=your_key
 ```
 
----
-
-## ▶️ Run the Application
+Run the application:
 
 ```bash
 streamlit run app.py
@@ -119,24 +113,27 @@ streamlit run app.py
 
 ---
 
-## 📄 Output
+## 📈 Skills Demonstrated
 
-The application generates:
-
-* Research reports in Markdown format
-* Research reports in PDF format
-* Downloadable reports through the Streamlit interface
+* Multi-Agent Systems
+* AI Workflow Orchestration
+* LLM Integration
+* Prompt Engineering
+* API Integration
+* Streamlit Development
+* Git & GitHub
+* AI Application Deployment
 
 ---
 
 ## 🎯 Future Improvements
 
-* Citation tracking
-* Multiple report templates
-* Research history dashboard
-* Database integration
-* Team collaboration features
-* Cloud deployment
+* Citation Tracking
+* Research History Dashboard
+* Multiple Report Templates
+* Database Integration
+* User Authentication
+* Team Collaboration Features
 
 ---
 
@@ -144,10 +141,4 @@ The application generates:
 
 **Vivek Surati**
 
-Built as an AI Engineering project demonstrating:
-
-* Multi-Agent Systems
-* AI Workflow Orchestration
-* LLM Integration
-* Web Research Automation
-* Streamlit Application Development
+AI & Software Developer
