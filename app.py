@@ -171,7 +171,10 @@ Use headings and proper structure.
 
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
+        os.makedirs("reports", exist_ok=True)
+        
         filename = f"reports/report_{timestamp}.md"
+        
 
         with open(filename, "w", encoding="utf-8") as file:
             file.write(str(result))
