@@ -1,0 +1,14 @@
+venv/
+.venv/
+
+**pycache**/
+*.pyc
+
+.env
+
+reports/
+
+.streamlit/
+
+.idea/
+.vscode/
